@@ -25,7 +25,7 @@
     If you use Android emulator and set up python server on your localhost, please input 10.0.2.2  in App UI.
     
 
-## Steps by Steps
+## Step by Step
 
 Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/quickstart/](https://grpc.io/docs/languages/python/quickstart/)) and record some details here. 
 
@@ -254,7 +254,7 @@ Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/
     
     - Import gRPC to Global Gradle
         
-        ./Simple_gRPC/Android_gRPC_Client/build.gradle：
+        ./Simple_gRPC/build.gradle :
         
         ```groovy
         // Top-level build file where you can add configuration options common to all sub-projects/modules.
@@ -290,8 +290,11 @@ Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/
         ```
         
     - Import gRPC to APP Gradle
-        The version of gRPC in this sample is 1.4.0。
-        ./Simple_gRPC/build.gradle :
+        
+        The version of gRPC in this sample is 1.4.0.
+        
+        ./Simple_gRPC/Android_gRPC_Client/build.gradle：
+        
         
         ```groovy
         apply plugin: 'com.android.application'
