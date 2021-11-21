@@ -1,18 +1,12 @@
 # Simple_Sample_gRPC
 
-## Implement gRPC Connection: Android as Client |  Python as Server
-
----
+## Goal: Implement gRPC Connection: Android as Client |  Python as Server
 
 ## Demo
 
----
-
-[]()
+![image](https://github.com/liuyuweitarek/Simple_Sample_gRPC/blob/main/Demo/simple_grpc_demo.gif)
 
 ## Quick Start
-
----
 
 1. Clone Project
     
@@ -33,8 +27,6 @@
     
 
 ## Steps by Steps
-
----
 
 Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/quickstart/](https://grpc.io/docs/languages/python/quickstart/)) and record some details here. 
 
