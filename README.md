@@ -1,6 +1,5 @@
-# Simple_Sample_gRPC
+# Simple-Sample-gRPC : Implement gRPC Connection: Android as Client | Python as Server
 
-## Goal: Implement gRPC Connection: Android as Client |  Python as Server
 
 ## Demo
 
