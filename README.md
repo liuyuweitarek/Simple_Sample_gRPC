@@ -102,9 +102,8 @@ Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/
     
 3.  How to use Python Server
     
-    In last step, wo generated two files, *_pb2.py and *_pb2_grpc.py, which contained objects of python gRPC protocol and settings. In the purpose of using them in a clean way, we'll define a new server object and set up a server folder.
+    In last step, we generated two files, *_pb2.py and *_pb2_grpc.py, which contained objects of python gRPC protocol and settings. In the purpose of using them in a clean way, we'll define a new server object and set up a server folder.
     
-    為了讓連線的Channel更乾淨，以及能擴充各種API，設計下面的目錄：
     
     - Python_gRPC_Server
         - interaction_pb2.py
@@ -292,8 +291,8 @@ Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/
         ```
         
     - Import gRPC to APP Gradle
-        1.  The version of gRPC in this sample is 1.4.0。
-        2. ./Simple_gRPC/build.gradle :
+        The version of gRPC in this sample is 1.4.0。
+        ./Simple_gRPC/build.gradle :
         
         ```groovy
         apply plugin: 'com.android.application'
@@ -370,7 +369,9 @@ Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/
         		//--/>
         ```
         
-    - Add Network permission ./Simple_gRPC/Android_gRPC_Client/src/main/AndroidManifest.xml：
+    - Add Network permission 
+        
+        ./Simple_gRPC/Android_gRPC_Client/src/main/AndroidManifest.xml：
         
         ```xml
         <?xml version="1.0" encoding="utf-8"?>
@@ -439,7 +440,7 @@ Follow the steps on the gRPC documents. ([https://grpc.io/docs/languages/python/
         
     - Setup Protocol setters and getters
         
-          ./src/main/java/ServerCommand.java (could just watch the code)
+        ./src/main/java/ServerCommand.java (could just watch the code)
         
         ```java
         public class ServerCommand {
