@@ -1,0 +1,2 @@
+include ':Android_gRPC_Client'
+rootProject.name='Simple_gRPC'

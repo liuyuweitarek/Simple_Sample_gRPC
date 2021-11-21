@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerHorizontal="true"
+    android:layout_centerVertical="true"
+    android:gravity="center"
+    tools:context=".SimpleGrpcActivity">
+    <LinearLayout
+        android:id="@+id/params"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center"
+        android:padding="20dp">
+        <EditText
+            android:id="@+id/ip1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/ip2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/ip3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="."
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/ip4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="phone"
+            android:textSize="25sp" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=":"
+            android:textSize="25sp" />
+        <EditText
+            android:id="@+id/port"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="50051"
+            android:inputType="phone"
+            android:textSize="25sp" />
+    </LinearLayout>
+    <Button
+        android:id="@+id/btn_connect"
+        android:layout_width="135dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/params"
+        android:layout_alignStart="@+id/params"
+        android:layout_alignEnd="@+id/params"
+        android:layout_centerVertical="true"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="0dp"
+        android:layout_marginEnd="38dp"
+        android:text="Connect"></Button>
+
+    <TextView
+        android:id="@+id/text_connect_state"
+        android:layout_width="214dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/btn_connect"
+        android:layout_alignStart="@+id/params"
+        android:layout_alignEnd="@+id/params"
+        android:layout_marginStart="1dp"
+        android:layout_marginEnd="9dp"
+        android:padding="15dp"
+        android:textAlignment="center"
+        android:text="Unconnected" />
+
+    <TextView
+        android:id="@+id/text_local_ip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:text="Your Local IP:" />
+</RelativeLayout>

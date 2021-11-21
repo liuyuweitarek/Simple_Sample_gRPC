@@ -1,0 +1,42 @@
+/**
+ * Send Message between  Android APP Client and Python Server.
+ */
+
+syntax = "proto3";
+
+ option java_multiple_files = true;
+ option java_package = "com.interaction.robot.interaction";
+ option java_outer_classname = "InteractProto";
+ option objc_class_prefix = "ST";
+
+ package interaction;
+
+ // The interact service definition.
+ service Interact {
+   // Sends connection confirm
+   rpc SimpleConnect (ConnectRequest) returns (ConnectReply) {}
+
+   // Sends information
+   rpc SimpleSend (Input) returns (Output) {}
+
+ }
+
+ // The connect request message contains the status
+ message ConnectRequest {
+   string status = 1;
+ }
+
+ // The connect response message contains the status
+ message ConnectReply {
+   string status = 1;
+ }
+
+ // The input message contains the utterance
+ message Input {
+   string utterance = 1;
+ }
+
+ // The output info message contains the utterance
+ message Output {
+   string utterance = 1;
+ }
